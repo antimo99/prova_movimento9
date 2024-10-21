@@ -34,7 +34,7 @@ class MyNode
 
             q0.data=msg->position;
             qf.data=q0.data; 
-            qf.data[6]+=M_PI/4;//configurazione da raggiungere
+            qf.data[5]+=M_PI/4;//configurazione da raggiungere
            
             using namespace std::chrono_literals;
             ros::Time t0=ros::Time::now();
