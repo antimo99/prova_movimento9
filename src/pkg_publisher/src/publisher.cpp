@@ -40,7 +40,7 @@ class MyNode
             ros::Time t0=ros::Time::now();
             ros::Duration t(0, 0); 
             ros::Rate loop_rate(1000.0); //1 kHz
-            double traj_duration=8.0;
+            double traj_duration=3.0;
             
             /*Ciclo di "generazione traiettoria"**/
             while (ros::ok() && t.toSec() <= traj_duration)
