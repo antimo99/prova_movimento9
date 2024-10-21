@@ -34,12 +34,12 @@ class MyNode
 
             q0.data=msg->position;
             qf.data=q0.data; 
-            qf.data[5]+=M_PI/4;//configurazione da raggiungere
+            qf.data[5]-=M_PI/4;//configurazione da raggiungere
            
             using namespace std::chrono_literals;
             ros::Time t0=ros::Time::now();
             ros::Duration t(0, 0); 
-            ros::Rate loop_rate(100.0); //1 kHz
+            ros::Rate loop_rate(500.0); //1 kHz
             double traj_duration=8.0;
             
             /*Ciclo di "generazione traiettoria"**/
